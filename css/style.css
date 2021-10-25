@@ -1,13 +1,4 @@
 
-/*
-  Theme Name: Folio
-  Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-*/
-
-/*  General Styling
-/*-----------------------------------------------------------------------------------*/
 
 body {
   background: #ffffff;
@@ -265,6 +256,7 @@ nav ul li a {
   background: url("../images/home-bg.jpg") repeat scroll center center / cover;
   background-attachment:scroll;
   object-position: center;
+  object-fit: cover;
   justify-content: center;
   opacity: 0.73;
   height: 100vh;

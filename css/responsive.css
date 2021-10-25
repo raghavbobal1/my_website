@@ -186,6 +186,28 @@
     padding-top: 15px;
     display: block;
   }
+
+  #header{
+    height: 50vh;
+  }
+
+  span.typed{
+    font-size: 15px;
+  }
+  .header-content{
+    height: 50vh !important;
+  }
+
+  .header-content h1 {
+    font-size:20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  .icon-black{
+    font-size: 18px !important;
+  }
   /* About */
   .head-info .header-content h1 {
     font-size: 32px;

@@ -1,12 +1,6 @@
-/*global $, jQuery, alert*/
 $(document).ready(function() {
 
   'use strict';
-
-  // ========================================================================= //
-  //  //SMOOTH SCROLL
-  // ========================================================================= //
-
 
   $(document).on("scroll", onScroll);
 
@@ -46,9 +40,6 @@ $(document).ready(function() {
     }
   }
 
-  // ========================================================================= //
-  //  //NAVBAR SHOW - HIDE
-  // ========================================================================= //
 
 
   $(window).scroll(function() {
@@ -63,33 +54,19 @@ $(document).ready(function() {
     }
   });
 
-  // ========================================================================= //
-  //  // RESPONSIVE MENU
-  // ========================================================================= //
-
   $('.responsive').on('click', function(e) {
     $('.nav-menu').slideToggle();
   });
-
-  // ========================================================================= //
-  //  Typed Js
-  // ========================================================================= //
 
   var typed = $(".typed");
 
   $(function() {
     typed.typed({
-      strings: ["A Software Developer.", "A Mobile/Web Developer.", " A Freelancer.", "A DJ."],
-      typeSpeed: 100,
+      strings: ["A Software Developer.", "A Mobile Developer.","A Web Developer."," A Freelancer.", "A DJ."],
+      typeSpeed: 70,
       loop: true,
     });
   });
-
-
-  // ========================================================================= //
-  //  Owl Carousel Services
-  // ========================================================================= //
-
 
   $('.services-carousel').owlCarousel({
       autoplay: true,
@@ -100,11 +77,6 @@ $(document).ready(function() {
       responsiveClass: true,
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
     });
-
-
-  // ========================================================================= //
-  //  Porfolio isotope and filter
-  // ========================================================================= //
 
 
   var portfolioIsotope = $('.portfolio-container').isotope({
@@ -120,9 +92,6 @@ $(document).ready(function() {
   });
 
 
-  // ========================================================================= //
-  //  magnificPopup
-  // ========================================================================= //
 
   var magnifPopup = function() {
     $('.popup-img').magnificPopup({
@@ -147,7 +116,6 @@ $(document).ready(function() {
   };
 
 
-  // Call the functions
   magnifPopup();
 
 });

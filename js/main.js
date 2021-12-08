@@ -96,14 +96,14 @@ $(document).ready(function() {
   var magnifPopup = function() {
     $('.popup-img').magnificPopup({
       type: 'image',
-      removalDelay: 300,
+      removalDelay: 100,
       mainClass: 'mfp-with-zoom',
       gallery: {
         enabled: true
+
       },
       zoom: {
         enabled: true, 
-
         duration: 300, 
         easing: 'ease-in-out', 
 

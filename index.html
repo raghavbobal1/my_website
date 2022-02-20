@@ -34,6 +34,13 @@
 </head>
 
 <body>
+  <script lang="javascript">
+    const reloadUsingLocationHash = () => {
+      window.location.hash = "reload";
+    }
+    window.onload = reloadUsingLocationHash();
+  </script>
+  
 
   <!-- start section navbar -->
   <nav id="main-nav">

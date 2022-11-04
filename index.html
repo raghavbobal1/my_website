@@ -33,14 +33,28 @@
 >
 </head>
 
-<body>
-  <script lang="javascript">
-    const reloadUsingLocationHash = () => {
-      window.location.hash = "reload";
-    }
-    window.onload = reloadUsingLocationHash();
-  </script>
-  
+<body onload="LoadOnce()">  
+
+  <!-- <script type="text/javascript">
+    $(document).ready(function(){    
+        //Check if the current URL contains '#'
+        if(document.URL.indexOf("#")==-1){
+            // Set the URL to whatever it was plus "#".
+            url = document.URL+"#";
+            location = "#";
+    
+            //Reload the page
+            location.reload(true);
+        }
+    });
+    </script> -->
+
+    <script language=" JavaScript" >
+      function LoadOnce() 
+      { 
+      window.location.reload(); 
+      } 
+      </script>
 
   <!-- start section navbar -->
   <nav id="main-nav">
@@ -488,10 +502,26 @@
       <div class="journal-block">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-5">
             <div class="journal-info">
 
-              <img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+              <img src="images/JGJ-blog-post-7.png" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4>Full Stack Developer</a></h4>
+                <p class="separator">Bank of Montreal, Toronto </br>March 2022 - Present
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="journal-info">
+
+              <img src="images/blog-post-2-new.png" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
 
@@ -504,7 +534,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-5">
             <div class="journal-info">
 
              <img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
@@ -520,7 +550,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-5">
             <div class="journal-info">
 
              <img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>

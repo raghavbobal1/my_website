@@ -31,31 +31,32 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon1.png">
 >
+<script type='text/javascript'>
+  
+  // JavaScript anonymous function
+  (() => {
+      if (window.localStorage) {
+
+          // If there is no item as 'reload'
+          // in localstorage then create one &
+          // reload the page
+          if (!localStorage.getItem('reload')) {
+              localStorage['reload'] = true;
+              window.location.reload();
+          } else {
+
+              // If there exists a 'reload' item
+              // then clear the 'reload' item in
+              // local storage
+              localStorage.removeItem('reload');
+          }
+      }
+  })(); // Calling anonymous function here only
+  console.log("Hello")
+</script>
 </head>
 
-<body onload="LoadOnce()">  
-
-  <!-- <script type="text/javascript">
-    $(document).ready(function(){    
-        //Check if the current URL contains '#'
-        if(document.URL.indexOf("#")==-1){
-            // Set the URL to whatever it was plus "#".
-            url = document.URL+"#";
-            location = "#";
-    
-            //Reload the page
-            location.reload(true);
-        }
-    });
-    </script> -->
-
-    <script language=" JavaScript" >
-      function LoadOnce() 
-      { 
-      window.location.reload(); 
-      } 
-      </script>
-
+<body>
   <!-- start section navbar -->
   <nav id="main-nav">
     <div class="row">
